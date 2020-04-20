@@ -24,16 +24,15 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "clean": "rimraf coverage build tmp",
-    "build": "tsc -p tsconfig.release.json",
+    "clean": "rimraf coverage lib tmp",
+    "build": "npm run clean && tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "yarn eslint . --ext .ts,.tsx",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepublish": "npm run build"
   },
   "author": "m.doaie <mdoaie@yahoo.co.uk>",
   "license": "MIT",
-  "dependencies": {
-    "tslib": "^1.11.1"
-  }
+  "dependencies": {}
 }
