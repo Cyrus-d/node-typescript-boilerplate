@@ -9,6 +9,9 @@
     "type": "git",
     "url": ""
   },
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "@types/node": "^13.13.0",
