@@ -5,4 +5,5 @@ module.exports = {
   testEnvironment: 'node',
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|js)x?$',
   preset: 'ts-jest',
+  setupFilesAfterEnv: ['./jest.setup.js'],
 };
