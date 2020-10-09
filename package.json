@@ -36,7 +36,9 @@
     "lint": "yarn eslint . --ext .ts,.tsx",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "jest:clearCache": "jest --clearCache",
+    "jest:no-cache": "jest --no-cache"
   },
   "author": "m.doaie <mdoaie@yahoo.co.uk>",
   "license": "MIT",
